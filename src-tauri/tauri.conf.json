@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "tauri-menubar",
+    "productName": "RapidRoute",
     "version": "0.0.0"
   },
   "tauri": {
@@ -16,6 +16,18 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "fs": {
+        "all": true,
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "copyFile": true,
+        "createDir": true,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "exists": true
       }
     },
     "bundle": {
@@ -33,7 +45,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "4gray.dev",
+      "identifier": "dev.rapidroute",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -63,8 +75,8 @@
         "fullscreen": false,
         "height": 400,
         "resizable": false,
-        "title": "menubar",
-        "width": 500,
+        "title": "RapidRoute",
+        "width": 600,
         "visible": false,
         "hiddenTitle": true,
         "decorations": false,
@@ -75,8 +87,8 @@
       }
     ],
     "systemTray": {
-      "iconPath": "icons/icon.png",
-      "iconAsTemplate": true,
+      "iconPath": "icons/32x32.png",
+      "iconAsTemplate": false,
       "menuOnLeftClick": false
     }
   }
