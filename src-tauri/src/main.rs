@@ -11,6 +11,7 @@ fn main() {
     let system_tray_menu = SystemTrayMenu::new().add_item(quit);
     tauri::Builder::default()
         .plugin(tauri_plugin_positioner::init())
+        .plugin(tauri_plugin_store::Builder::default().build())
         .system_tray(SystemTray::new().with_menu(system_tray_menu))
         .on_system_tray_event(|app, event| {
             tauri_plugin_positioner::on_tray_event(app, &event);
@@ -68,6 +69,14 @@ fn main() {
         })
         .setup(|app| {
             app.set_activation_policy(tauri::ActivationPolicy::Accessory);
+            
+            // Initialize the store path in the app's data directory
+            #[cfg(debug_assertions)]
+            {
+                let app_dir = app.path_resolver().app_data_dir().unwrap();
+                println!("App data directory: {:?}", app_dir);
+            }
+            
             Ok(())
         })
         .run(tauri::generate_context!())
