@@ -1,37 +1,65 @@
-# Tauri Menubar
+# RapidRoute 🚀
 
-<p align="center">
-  <img src="./screenshot.png" alt="Menubar app with Tauri" />
-</p>
+<div align="center">
+  <img src="preview.gif" alt="RapidRoute Menubar App" width="600" />
+  <p><em>Split-flap Departure Monitor in your menubar</em></p>
+</div>
 
-A minimal example of a menubar application built with [Tauri](https://tauri.app/). This application demonstrates the use of basic functionalities and System Tray API.
+RapidRoute transforms your menubar into an elegant departure monitor starring a split-flap display, providing real-time public transport information right at your fingertips. Built with Tauri and powered by the [MobiData BW® API](https://www.mobidata-bw.de/blog/abfahrts-ankunfts-monitor), it delivers accurate departure times with native performance.
 
-To learn more about how this application was built, check out the article [Creating a Menubar Application with Tauri](https://medium.com/@4gray/create-menubar-app-with-tauri-510ab7f7c43d).
+## ✨ Key Features
 
-## Features
+- **Live Departures** - Real-time departure information from [MobiData BW®](https://www.mobidata-bw.de/blog/abfahrts-ankunfts-monitor)
+- **Smart Station Search** - Quickly find your nearest stations and stops
+- **Favorite Routes** - Pin your most-used connections for instant access
+- **Auto-Refresh** - Always up-to-date departure times
+- **Clean Interface** - Beautifully designed timetable with clear visibility
 
-- Toggle window when clicking on an icon in menubar/tray
-- Positioning the window centrally below the icon
-- Hiding dock icon for macOS and windows
-- Click outside to hide the application
-- Right click context menu
-- CSS based arrow between menubar and application
+## 🚀 Quick Start
 
-## Running the application
-To run the application, you need to have Tauri installed on your machine. You can find the installation instructions on the Tauri website.
+```bash
+# Install dependencies
+pnpm install
 
-    $ pnpm install 
-    $ pnpm tauri dev
+# Launch development environment
+pnpm tauri dev
+```
 
-## Recommended IDE Setup
+## 🛠️ Tech Stack
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- **Tauri** - Lightweight, secure native runtime
+- **Vue.js** - Progressive JavaScript framework
+- **Rust** - Systems programming for performance
+- **Modern CSS** - Fluid animations and styling
 
-## Contribute
-If you would like to contribute to this project, please fork the repository and open a pull request with your changes.
+## 🔮 Upcoming Features
+- [ ] **UI Redesign** - Make the UI look better
+- [ ] **Mobile version** - Use RapidRoute on your phone
+- [ ] **Custom Shortcuts** - Create personalized keyboard combinations
+- [ ] **Cloud Sync** - Backup and sync your settings across devices
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details
+## 🤝 Contributing
 
-## Acknowledgements
-Tauri Team for providing the framework
+I welcome contributions! Whether it's bug fixes, feature additions, or documentation improvements:
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- Tauri Team for the incredible framework
+- [Departure Board](https://github.com/paulcuth/departure-board) - For the inspiration on the beautiful split-flap display animation implementation
+- [Tauri Menubar App](https://github.com/4gray/tauri-menubar-app) - For guidance on menubar app implementation and System Tray API usage
+
+---
+
+<div align="center">
+  Made with ❤️ by Paul Müller
+</div>
